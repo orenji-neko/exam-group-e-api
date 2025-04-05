@@ -8,7 +8,7 @@
 
 ## Routes
 
-### [GET] /api/exams
+### [GET] /exams
 Gets a list of exams in JSON format.
 #### Response.
 ```typescript
@@ -18,7 +18,7 @@ Gets a list of exams in JSON format.
 }]
 ```
 
-### [POST] /api/exams
+### [POST] /exams
 Creates an exam.
 #### Request body.
 ```typescript
@@ -34,7 +34,7 @@ Creates an exam.
 }
 ```
 
-### [PUT] /api/exams/:id
+### [PUT] /exams/:id
 Updates an exam.
 #### Params
  - id: Exam id
