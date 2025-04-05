@@ -26,9 +26,10 @@ router.get('/exams', (req, res) => {
  * @author Princess Villanueva
  */
 router.post('/exams', (req, res) => {
-  const { name } = req.body
-
-  // Create Exam
+  const newExam = req.body;
+  newExam.id = exams.length + 1; 
+  exams.push(newExam);
+  res.status(201).json(newExam);
 });
 
 /**
