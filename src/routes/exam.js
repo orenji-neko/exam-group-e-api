@@ -17,7 +17,7 @@ router.get('/exam-group', (req, res) =>
 /**
  * @author Christian Yancha
  */
-router.get('/exam-group', (req,res) => 
+router.get('/exams', (req,res) => 
   res.json(exams)
 )
 /**
