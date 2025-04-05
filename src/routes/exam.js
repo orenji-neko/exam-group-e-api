@@ -17,10 +17,9 @@ router.get('/exam-group', (req, res) =>
 /**
  * @author Christian Yancha
  */
-router.get('/exams', (req, res) => {
-
-});
-
+router.get('/exam-group', (req,res) => 
+  res.json({message: "Group E API"})
+)
 /**
  * [POST] /api/exams
  * @author Princess Villanueva
