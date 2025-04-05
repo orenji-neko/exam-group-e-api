@@ -18,7 +18,7 @@ router.get('/exam-group', (req, res) =>
  * @author Christian Yancha
  */
 router.get('/exam-group', (req,res) => 
-  res.json({message: "Group E API"})
+  res.json(exams)
 )
 /**
  * [POST] /api/exams
@@ -41,7 +41,6 @@ router.put('/exams/:id', (req, res) => {
   let exam = exams.find(e => e.id === examId);
   if (exam) {
     exam.name = updatedData.name || exam.name;
-    exam.date = updatedData.date || exam.date;
     res.json(exam);
   } else {
     res.status(404).json({ error: 'Exam not found' });
