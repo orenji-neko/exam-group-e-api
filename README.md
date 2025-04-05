@@ -10,6 +10,13 @@
 
 ### [GET] /api/exams
 Gets a list of exams in JSON format.
+#### Response.
+```typescript
+[{
+  id: number;
+  name: string;
+}]
+```
 
 ### [POST] /api/exams
 Creates an exam.
