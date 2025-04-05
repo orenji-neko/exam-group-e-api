@@ -31,7 +31,6 @@ router.post('/exams', (req, res) => {
   exams.push(newExam);
   res.status(201).json(newExam);
 });
-
 /**
  * [PUT] /api/exams
  * @author Ian John Dal
