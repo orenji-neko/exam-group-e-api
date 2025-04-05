@@ -19,6 +19,13 @@ Creates an exam.
   name: string;
 }
 ```
+#### Response.
+```typescript
+{
+  id: number;
+  name: string;
+}
+```
 
 ### [PUT] /api/exams/:id
 Updates an exam.
@@ -27,6 +34,13 @@ Updates an exam.
 #### Request body.
 ```typescript
 {
+  name: string;
+}
+```
+#### Response.
+```typescript
+{
+  id: number;
   name: string;
 }
 ```
